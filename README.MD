@@ -12,13 +12,14 @@ This application populates a HA group with entities that are not being shown in 
 Setup
 HomeAssistant
 Create a group in Home Assistant and put one bogus entry in it as a place holder.
-group.yaml
-orphan_entities:
+group.yaml<br>
+<div>orphan_entities:
   view: yes
   entities:
     - light.bogus
-
-Appdaemon.YAML
+</div>
+<br>
+Appdaemon.YAML<br>
 orphan_entities:
   class: orphan_entities
   module: orphan_entities
