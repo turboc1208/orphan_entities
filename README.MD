@@ -13,11 +13,12 @@ Setup
 HomeAssistant
 Create a group in Home Assistant and put one bogus entry in it as a place holder.
 group.yaml<br>
-orphan_entities:<br>
-  view: yes<br>
-  entities:<br>
-    - light.bogus<br>
-<br>
+<pre>
+orphan_entities:
+  view: yes
+  entities:
+    - light.bogus
+</pre><br>
 Appdaemon.YAML<br>
 <span>
 orphan_entities:<br>
