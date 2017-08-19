@@ -20,7 +20,7 @@ orphan_entities:
     - light.bogus
 </pre><br>
 Appdaemon.YAML<br>
-<span>
+<pre>
 orphan_entities:<br>
   class: orphan_entities<br>
   module: orphan_entities<br>
@@ -28,7 +28,7 @@ orphan_entities:<br>
   exclusion_types: ['zwave']<br>
   interval: 120<br>
   on_demand: input_boolean.demand_update<br>
-</span>
+</pre>
 <br>
 <ul>
 <li>orphan_group - Required - group created in groups.yaml file to hold orphaned entities
