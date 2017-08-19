@@ -13,13 +13,14 @@ Setup
 HomeAssistant
 Create a group in Home Assistant and put one bogus entry in it as a place holder.
 group.yaml<br>
-<div>orphan_entities:
+<span>orphan_entities:
   view: yes
   entities:
     - light.bogus
-</div>
+</span>
 <br>
 Appdaemon.YAML<br>
+<span>
 orphan_entities:
   class: orphan_entities
   module: orphan_entities
@@ -27,7 +28,8 @@ orphan_entities:
   exclusion_types: ['zwave']
   interval: 120
   on_demand: input_boolean.demand_update
-
+</span>
+<br>
 orphan_group - Required - group created in groups.yaml file to hold orphaned entities
 exclusion_types: - Optional - default ['group','zone'] - type entities not to include in view.  
 interval: Optional - default 120 seconds - seconds between updates
